@@ -5,7 +5,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 
-FROM tomcat:latest
+FROM tomcat
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
