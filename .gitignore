@@ -37,6 +37,5 @@ build/
 ### Mac OS ###
 .DS_Store
 
-#Hide properties file
-# Hide DB properties file
-src/main/resources/db.properties
+
+
