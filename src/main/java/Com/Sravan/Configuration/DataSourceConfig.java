@@ -28,7 +28,12 @@ public class DataSourceConfig {
         dataSource.setJdbcUrl("jdbc:mysql://mysql-3074c864-spring-boot-mysql.i.aivencloud.com:19025/lms");
         dataSource.setUser(username);
         dataSource.setPassword(password);
-        System.out.println("hello world");
+        System.out.println("Initializing the data source");
+         dataSource.setInitialPoolSize(5);
+       dataSource.setMaxIdleTime(3000);
+
+       dataSource.setMaxPoolSize(20);
+       dataSource.setAcquireIncrement(5);
         return dataSource;
     }
 
