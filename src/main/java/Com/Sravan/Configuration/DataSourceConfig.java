@@ -29,11 +29,6 @@ public class DataSourceConfig {
         dataSource.setUser(username);
         dataSource.setPassword(password);
         System.out.println("Initializing the data source");
-         dataSource.setInitialPoolSize(5);
-       dataSource.setMaxIdleTime(3000);
-
-       dataSource.setMaxPoolSize(20);
-       dataSource.setAcquireIncrement(5);
         return dataSource;
     }
 
